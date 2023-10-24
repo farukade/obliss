@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: rgb(23, 22, 22);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.parent-container {
+    color: #19191b;
+    height: 100%;
+    flex-direction: row;
+    justify-content: left;
+    display: flex;
+    width: 100%;
+}
+
+.parent-container .navbar {
+    background-color: #f5eff1;
+    width: 20%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar h1 {
+    color: black;
+    text-align: center;
+    font-style: Brush Script MT cursive;
+    font-size: 30px;
+    padding: 60px;
+}
+
+.navbar ul {
+    display: block;
+    margin: 50px;
+    line-height: 40px;
+    padding-top: 70px;
+}
+
+.navbar ul li {
+    color: black;
+    margin-left: 40px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.navbar.main-span {
+    line-height: 20px;
+    padding: 20px;
+}
+
+ #main-header {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color: #0000008f;
+    color: #fff;
+    align-items: flex-start;
+    padding: 35px;
+}
+
+#main-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#main-header p {
+    line-height: 1.5rem;
+    font-size: large;
+    font-weight: lighter;
+    margin: 20px 0 20px 0;
+}
+
+
+.logo-text {
+    font-family: Croissant One;
+}   
+.container2 {
+    background-image: url('../image/222.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.horizontal {
+    height: 7px;
+    width: 250px;
+    background-color: red;
+    align-self: flex-start;
+}
