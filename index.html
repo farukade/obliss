@@ -8,13 +8,13 @@
 
 <body>
     <div class="parent-container">
-        <div class="top-left hidden">
+        <div id="hamburger" class="top-left" onclick="openMenu()">
             <img src="./resources/icons/hamburger.png" alt="hambuger">
         </div>
-        <div class="top-left">
+        <div id="close" class="top-left hidden" onclick="closeMenu()">
             <img src="./resources/icons/close.png" alt="hambuger">
         </div>
-        <nav class="small-navbar">
+        <nav id="small-navbar" class="small-navbar">
             <div class="head-note">
                 <h1 class="logo-text">OC</h1>
                 <ul>
@@ -51,7 +51,7 @@
                 </span>
             </div>
         </nav>
-        <nav class="hidden">
+        <nav id="navbar" class="hidden">
             <div class="head-note">
                 <h1 class="logo-text">OBLISS COLLECTION</h1>
                 <ul>
@@ -104,6 +104,7 @@
             </main>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
