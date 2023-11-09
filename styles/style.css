@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,11 +7,16 @@
 }
 
 body {
-    background-color: #fff;
     color: rgb(23, 22, 22);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.5;
+    background-image: url('../resources/images/222.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .parent-container {
@@ -24,12 +30,17 @@ body {
 
 .parent-container .navbar {
     background-color: #f5eff1;
-    width: 20%;
+    width: 15%;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
 }
+
 a {
     text-decoration: none;
     color: gray;
@@ -39,8 +50,8 @@ a {
     color: black;
     text-align: center;
     font-style: Brush Script MT cursive;
-    font-size: 30px;
-    padding: 60px;
+    font-size: 20px;
+    padding: 50px;
 }
 
 .navbar ul {
@@ -52,17 +63,18 @@ a {
 
 .navbar ul li {
     color: black;
-    margin-left: 40px;
+    margin-left: auto;
     height: 40px;
     list-style-type: none;
+    font-weight: 800;
 }
 
-.navbar.main-span {
+.navbar .main-span {
     line-height: 20px;
     padding: 20px;
 }
 
- #main-header {
+#main-header {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -73,7 +85,7 @@ a {
 }
 
 #main-header h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
 }
@@ -88,21 +100,89 @@ a {
 
 .logo-text {
     font-family: Croissant One;
-}   
+}
+
 .container2 {
-    background-image: url('../image/222.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    margin: 0 auto;
 }
+
 .horizontal {
     height: 7px;
     width: 250px;
     background-color: red;
     align-self: flex-start;
+}
+
+.parent-container .small-navbar {
+    background-color: #f5eff1;
+    width: 5%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.small-navbar h1 {
+    color: black;
+    text-align: center;
+    font-style: Brush Script MT cursive;
+    font-size: 30px;
+    padding: 60px;
+}
+
+.small-navbar ul {
+    display: block;
+    margin: 50px;
+    line-height: 40px;
+    padding-top: 70px;
+}
+
+.small-navbar ul li {
+    color: black;
+    margin: 0 auto;
+    height: 40px;
+    list-style-type: none;
+}
+
+.small-navbar .main-span {
+    line-height: 20px;
+    padding: 20px;
+}
+
+.head-note ul li a img {
+    width: 20px;
+}
+
+.head-note ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 5;
+}
+
+.parent-container .top-left img {
+    width: 25px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.small-navbar .head-note .logo-text {
+    cursor: pointer;
 }
